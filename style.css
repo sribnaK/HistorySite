@@ -1,0 +1,150 @@
+body {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+.home_block {
+    width: 75vw;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home_block_logo {
+    width: 130px;
+}
+
+.home_block_title {
+    margin-top: 15px;
+    width: 322px;
+    text-align: center;
+    color: rgb(36, 60, 60);
+}
+
+.home_block_poster {
+    width: 500px;
+    margin-top: 15px;
+    border-radius: 150px 150px 0 0;
+    border-bottom: 2px solid black;
+}
+
+.general_info_block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 28px;
+    width: 85%;
+    margin: auto;
+}
+
+.general_info_block p {
+    text-indent: 3ch;
+    margin: 15px auto;
+}
+
+.years_50_70_block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 28px;
+    width: 85%;
+    margin: auto;
+}
+
+.years_50_70_block h2{
+    text-align: center;
+}
+
+.years_50_70_block p {
+    text-indent: 3ch;
+    margin: 15px auto;
+}
+
+.communist_government_image {
+    float: right;
+    width: 50%;
+    margin-left: 10px;
+}
+
+.budapest_image {
+    float: left;
+    width: 50%;
+    margin-right: 10px;
+}
+
+.praga_image {
+    float: right;
+    margin-left: 10px;
+}
+
+.about_project_block {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    font-size: 32px;
+}
+
+#about_project {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.panel {
+    width: 75vw;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin-top: -150%;
+    position: absolute;
+    background: #000;
+    z-index: 2;
+    -webkit-transition: all .8s ease-in-out;
+    -moz-transition: all .8s ease-in-out;
+    -o-transition: all .8s ease-in-out;
+    transition: all .8s ease-in-out;
+}
+
+.panel:target {
+    margin-top: 0;
+    background-color: white;
+}
+
+.nav_block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25vw;
+    background-color: rgb(36, 60, 60);
+    font-size: 26px;
+    z-index: 888;
+}
+
+.nav_block_link {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+}
+
+.nav_block_link a {
+    margin-right: 10px;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    border-bottom: 2px solid white;
+    padding: 20px 0;
+}
+
+#home:target ~ #header #navigation #link-home,
+#general_info:target ~ #header #navigation #link_general_info,
+#about_project:target ~ #header #navigation #link_about_project,
+#years_50_70:target ~ #header #navigation #link_50_70_years {
+    background-color: white;
+    color: rgb(36, 60, 60);
+}
