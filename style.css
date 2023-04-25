@@ -198,10 +198,11 @@ body {
 }
 
 
-#home:target~#header #navigation #link-home,
+#home:target~#header #navigation #link_home,
 #general_info:target~#header #navigation #link_general_info,
 #about_project:target~#header #navigation #link_about_project,
-#years_50_70:target~#header #navigation #link_50_70_years {
+#years_50_70:target~#header #navigation #link_50_70_years,
+#years_90:target~#header #navigation #link_years_90  {
     background-color: white;
     color: rgb(36, 60, 60);
 }
