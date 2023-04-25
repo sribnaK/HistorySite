@@ -40,6 +40,7 @@ body {
 }
 
 .general_info_block p {
+    text-align: justify;
     text-indent: 3ch;
     margin: 15px auto;
 }
@@ -53,11 +54,12 @@ body {
     margin: auto;
 }
 
-.years_50_70_block h2{
+.years_50_70_block h2 {
     text-align: center;
 }
 
 .years_50_70_block p {
+    text-align: justify;
     text-indent: 3ch;
     margin: 15px auto;
 }
@@ -141,10 +143,65 @@ body {
     padding: 20px 0;
 }
 
-#home:target ~ #header #navigation #link-home,
-#general_info:target ~ #header #navigation #link_general_info,
-#about_project:target ~ #header #navigation #link_about_project,
-#years_50_70:target ~ #header #navigation #link_50_70_years {
+.key_dates {
+    font-size: 28px;
+    width: 85%;
+    margin: auto;
+}
+
+.key_dates h1{
+    text-align: center;
+}
+
+.years_90_block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    width: 85%;
+    margin: auto;
+}
+
+.years_90_block h2{
+    text-align: center;
+}
+
+.years_90_block p{
+    text-indent: 3ch;
+    text-align: justify;
+    margin: 10px 0;
+}
+
+.poster_block {
+    display: flex;
+    flex-direction: row;
+    column-gap: 25px;
+    margin-bottom: 15px;
+
+}
+
+.poster_block_content{
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+.poster_block_content span {
+    text-align: center;
+    font-weight: bold;
+    
+}
+
+.poster {
+    height: 500px;
+}
+
+
+#home:target~#header #navigation #link-home,
+#general_info:target~#header #navigation #link_general_info,
+#about_project:target~#header #navigation #link_about_project,
+#years_50_70:target~#header #navigation #link_50_70_years {
     background-color: white;
     color: rgb(36, 60, 60);
 }
